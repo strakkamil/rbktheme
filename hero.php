@@ -9,9 +9,17 @@
         fetchpriority="high">
     </picture>
   </div>
+  <?php if (is_single()): ?>
+  <header class="single">
+    <h2 class="heading <?= $args['class'] ?>">
+      <?php echo $args['title'] ?>
+    </h2>
+  </header>
+  <?php else: ?>
   <header>
     <h1 class="heading <?= $args['class'] ?>">
       <?php echo $args['title'] ?>&nbsp;&nbsp;&nbsp;
     </h1>
   </header>
+  <?php endif; ?>
 </section>

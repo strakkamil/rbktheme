@@ -19,6 +19,7 @@
         <li><a href="https://rbk-events.pl/o-mnie">O mnie</a></li>
         <li><a href="https://rbk-events.pl/oferta/wesele">Oferta</a></li>
         <li><a href="https://rbk-events.pl/media/zdjecia">Media</a></li>
+        <li><a href="https://rbk-events.pl/blog">Blog</a></li>
         <li><a href="https://rbk-events.pl/kontakt">Kontakt</a></li>
       </ul>
       <button class="hamburger" aria-label="hamburger">

@@ -24,6 +24,23 @@ add_filter('excerpt_length', function () {
   return 20;
 });
 
+function reading_time()
+{
+  $content = get_post_field('post_content', get_the_ID());
+  $word_count = str_word_count(strip_tags($content));
+  $minutes = ceil($word_count / 200);
+
+  if ($minutes === 1) {
+    $label = '1 minuta czytania';
+  } elseif ($minutes >= 2 && $minutes <= 4) {
+    $label = $minutes . ' minuty czytania';
+  } else {
+    $label = $minutes . ' minut czytania';
+  }
+
+  return $label;
+}
+
 function rbk_pagination()
 {
   echo '<div class="pagination">';
