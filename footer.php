@@ -23,7 +23,7 @@
         src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-youtube.svg" alt="logo-youtube" />
     </a>
   </div>
-  <div class="privacy"><a href="https://rbk-events.pl/polityka-prywatnosci">Polityka prywatności</a></div>
+  <div class="privacy"><a href="<?php echo esc_url(home_url('/polityka-prywatnosci')); ?>">Polityka prywatności</a></div>
   <div class="privacy"><button class="cookies-open">Ustawienia plików cookies</button></div>
   <div class="copyrights"><span>© <?= date('Y') ?> RBK Events - Michał Robak</span><span>Realizacja:<a
         href="mailto:strakkamil@protonmail.com">Kamil

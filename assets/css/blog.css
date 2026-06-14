@@ -66,6 +66,7 @@ p.all-posts {
   display: block;
   width: 100%;
   height: 120%;
+  min-height: 280px;
   object-fit: cover;
 }
 
